@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CLJS Todo</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <script type='text/javascript' id='lt_ws' src='http://localhost:62472/socket.io/lighttable/ws.js'></script>
+
+        <div id="titlebar">
+            <h1>- Dash -</h1>
+            <h4>Powered by MindFork</h4>
+        </div>
+
+        <div id="lists"></div>
+
+        <script src="http://fb.me/react-0.11.1.js"></script>
+        <script src="out/goog/base.js" type="text/javascript"></script>
+        <script src="cljs_todo.js" type="text/javascript"></script>
+        <script type="text/javascript">goog.require("cljs_todo.core");</script>
+    </body>
+</html>
